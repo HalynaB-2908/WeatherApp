@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <form id="search-form">
+          <div class="row">
+            <div class="col-8">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Type your city"
+                id="city-input"
+              />
+            </div>
+            <div class="col-4 buttons">
+              <button type="submit" class="btn btn-secondary">Search</button>
+              <button type="button" class="btn btn-secondary" id="search-current-location">Current</button>
+            </div>
+          </div>
+          </form>
+          <div class="row">
+            <div class="col-8">
+              <h1 id="current-city"></h1>
+              <h3 id="current-date"></h3>
+              <h4>☀ 
+                <span id="current-temperature">19</span>
+                <a href="#" id="temp-celsium">°C</a> 
+                <span class="temp-divider">|</span>
+                <a href="#" id="temp-fahrengeit">°F</a> 
+                  <span id="weather-description">sunny</span>
+                  </h4>
+            </div>
+            <div class="col-4">
+              <p><a href="#" class="link">Frankfurt am Main</a></p>
+              <p><a href="#" class="link">Bonn</a></p>
+              <p><a href="#" class="link">Dusseldorf</a></p>
+              <p><a href="#" class="link">Kassel</a></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2">
+              <h5>Wed</h5>
+              <p class="emojis">⛈</p>
+              <p>21°C</p>
+            </div>
+            <div class="col-2">
+              <h5>Thu</h5>
+              <p class="emojis">🌥</p>
+              <p>22°C</p>
+            </div>
+            <div class="col-2">
+              <h5>Fri</h5>
+              <p class="emojis">🌦</p>
+              <p>20°C</p>
+            </div>
+            <div class="col-2">
+              <h5>Sat</h5>
+              <p class="emojis">🌤</p>
+              <p>21°C</p>
+            </div>
+            <div class="col-2">
+              <h5>Sun</h5>
+              <p class="emojis">🌤</p>
+              <p>19°C</p>
+            </div>
+            <div class="col-2">
+              <h5>Mon</h5>
+              <p class="emojis">🌧</p>
+              <p>20°C</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<script src="script/script.js"></script>
+   
+  
+  </body>
+</html>
