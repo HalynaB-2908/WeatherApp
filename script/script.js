@@ -58,7 +58,7 @@ function showWeather(event) {
 
 form.addEventListener("submit", showWeather);
 
-function handleClick() {
+function connectNavigator() {
   function showCurrentLocationWeather(response) {
     console.log(response);
     let currentTemperature = Math.round(response.data.main.temp);
@@ -81,6 +81,6 @@ function handleClick() {
   navigator.geolocation.getCurrentPosition(showPosition);
 }
 
-handleClick();
+connectNavigator();
 let buttonCurrent = document.querySelector("#search-current-location");
-buttonCurrent.addEventListener("click", handleClick);
+buttonCurrent.addEventListener("click", connectNavigator);
